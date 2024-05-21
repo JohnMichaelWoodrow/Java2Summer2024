@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1f2176d2-435b-4dea-ab2e-8ba4f0cdc3b3" name="Changes" comment="Commit">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Exercise3/Question3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Exercise4/Circle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Exercise4/CircleTester.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Exercise4/InvalidShapeParameterException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Exercise4/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Exercise4/Rectangle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Exercise4/RectangleTester.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Exercise4/Shape.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Exercise4/ShapeGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Exercise5/ExceptionA.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Exercise5/ExceptionB.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Exercise5/ExceptionC.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Exercise5/ExceptionDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Exercise6/ConstructorPass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Exercise6/ConstructorPassDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Exercise7/RethrowExceptionDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Exercise8/WeightConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Exercise8/WeightConverterTester.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2gmw8kQ5lUy4tLX7c3gHGLgRJgY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\rusty\IdeaProjects\Java2Summer2024\src\main\java" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1f2176d2-435b-4dea-ab2e-8ba4f0cdc3b3" name="Changes" comment="" />
+      <created>1716315905650</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1716315905650</updated>
+      <workItem from="1716315906655" duration="1433000" />
+      <workItem from="1716332059519" duration="246000" />
+    </task>
+    <task id="LOCAL-00001" summary="Commit">
+      <option name="closed" value="true" />
+      <created>1716316195083</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1716316195083</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit" />
+  </component>
+</project>
