@@ -1,8 +1,6 @@
 package question2;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
@@ -49,6 +47,7 @@ public class PhishingScanner {
 
     private static void scanFile(String fileName) {
         int totalPoints = 0;
+        StringBuilder output = new StringBuilder();
 
         try (BufferedReader br = new BufferedReader(new FileReader(fileName))) {
             String line;
@@ -60,7 +59,9 @@ public class PhishingScanner {
                     if (line.toLowerCase().contains(phishingTerm)) {
                         int occurrences = (line.length() - line.toLowerCase().replace(phishingTerm, "").length()) / phishingTerm.length();
                         totalPoints += occurrences * points;
-                        System.out.printf("Found term: %s, Occurrences: %d, Points: %d%n", phishingTerm, occurrences, occurrences * points);
+                        String result = String.format("Found term: %s, Occurrences: %d, Points: %d%n", phishingTerm, occurrences, occurrences * points);
+                        System.out.print(result);
+                        output.append(result);
                     }
                 }
             }
@@ -68,6 +69,19 @@ public class PhishingScanner {
             e.printStackTrace();
         }
 
-        System.out.printf("Total Phishing Points in %s: %d%n", fileName, totalPoints);
+        String totalPointsResult = String.format("Total Phishing Points in %s: %d%n", fileName, totalPoints);
+        System.out.print(totalPointsResult);
+        output.append(totalPointsResult);
+
+        writeOutputToFile(fileName, output.toString());
+    }
+
+    private static void writeOutputToFile(String fileName, String content) {
+        String outputFileName = fileName.replace(".txt", "output.txt");
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(outputFileName))) {
+            writer.write(content);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

@@ -1,0 +1,6 @@
+Found term: account, Occurrences: 1, Points: 3
+Found term: account, Occurrences: 1, Points: 3
+Found term: account, Occurrences: 1, Points: 3
+Found term: bank, Occurrences: 1, Points: 3
+Found term: claim, Occurrences: 1, Points: 3
+Total Phishing Points in C:\Users\rusty\IdeaProjects\Java2Summer2024\Assignment2\PhishingEmailExample.txt: 15
