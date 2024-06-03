@@ -1,15 +1,28 @@
 package question3;
 
-import java.io.Serializable;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
 
-public class Settings implements Serializable {
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlRootElement(name = "Settings")
+public class Settings {
+    @XmlElement(name = "Name")
     private String name;
-    private double height;
-    private double weight;
-    private String birthday;
-    private int functionalThresholdPower;
 
-    // Getters and Setters
+    @XmlElement(name = "Height")
+    private double height;
+
+    @XmlElement(name = "Weight")
+    private double weight;
+
+    @XmlElement(name = "Birthday")
+    private String birthday;
+
+    @XmlElement(name = "FunctionalThresholdPower")
+    private double functionalThresholdPower;
+
     public String getName() {
         return name;
     }
@@ -42,11 +55,13 @@ public class Settings implements Serializable {
         this.birthday = birthday;
     }
 
-    public int getFunctionalThresholdPower() {
+    public double getFunctionalThresholdPower() {
         return functionalThresholdPower;
     }
 
-    public void setFunctionalThresholdPower(int functionalThresholdPower) {
+    public void setFunctionalThresholdPower(double functionalThresholdPower) {
         this.functionalThresholdPower = functionalThresholdPower;
     }
 }
+
+

@@ -1,39 +1,23 @@
 package question1;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class TelephoneNumberWord {
-    public enum Digit {
-        TWO('2', new char[]{'A', 'B', 'C'}),
-        THREE('3', new char[]{'D', 'E', 'F'}),
-        FOUR('4', new char[]{'G', 'H', 'I'}),
-        FIVE('5', new char[]{'J', 'K', 'L'}),
-        SIX('6', new char[]{'M', 'N', 'O'}),
-        SEVEN('7', new char[]{'P', 'R', 'S'}),
-        EIGHT('8', new char[]{'T', 'U', 'V'}),
-        NINE('9', new char[]{'W', 'X', 'Y'});
+    private static final Map<Character, char[]> digitToLettersMap = new HashMap<>();
+    static {
+        digitToLettersMap.put('2', new char[]{'A', 'B', 'C'});
+        digitToLettersMap.put('3', new char[]{'D', 'E', 'F'});
+        digitToLettersMap.put('4', new char[]{'G', 'H', 'I'});
+        digitToLettersMap.put('5', new char[]{'J', 'K', 'L'});
+        digitToLettersMap.put('6', new char[]{'M', 'N', 'O'});
+        digitToLettersMap.put('7', new char[]{'P', 'R', 'S'});
+        digitToLettersMap.put('8', new char[]{'T', 'U', 'V'});
+        digitToLettersMap.put('9', new char[]{'W', 'X', 'Y'});
+    }
 
-        private final char digit;
-        private final char[] letters;
-
-        Digit(char digit, char[] letters) {
-            this.digit = digit;
-            this.letters = letters;
-        }
-
-        public char[] getLetters() {
-            return letters;
-        }
-
-        public char getDigit() {
-            return digit;
-        }
-
-        public static char[] getLettersForDigit(char digit) {
-            for (Digit d : values()) {
-                if (d.getDigit() == digit) {
-                    return d.getLetters();
-                }
-            }
-            return new char[0];
-        }
+    public static char[] getLettersForDigit(char digit) {
+        return digitToLettersMap.getOrDefault(digit, new char[]{});
     }
 }
+

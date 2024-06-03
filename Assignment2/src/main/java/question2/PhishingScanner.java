@@ -48,14 +48,12 @@ public class PhishingScanner {
     private static void scanFile(String fileName) {
         int totalPoints = 0;
         StringBuilder output = new StringBuilder();
-
         try (BufferedReader br = new BufferedReader(new FileReader(fileName))) {
             String line;
             while ((line = br.readLine()) != null) {
                 for (PhishingTerm term : PHISHINGTERMS) {
                     String phishingTerm = term.getTerm().toLowerCase();
                     int points = term.getPoints();
-
                     if (line.toLowerCase().contains(phishingTerm)) {
                         int occurrences = (line.length() - line.toLowerCase().replace(phishingTerm, "").length()) / phishingTerm.length();
                         totalPoints += occurrences * points;
@@ -72,7 +70,6 @@ public class PhishingScanner {
         String totalPointsResult = String.format("Total Phishing Points in %s: %d%n", fileName, totalPoints);
         System.out.print(totalPointsResult);
         output.append(totalPointsResult);
-
         writeOutputToFile(fileName, output.toString());
     }
 
