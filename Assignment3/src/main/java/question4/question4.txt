@@ -1,0 +1,12 @@
+ Often times, documents contain personal information which should not be shared. A
+process called redaction removes this personal information and replaces each character
+containing personal information with a filler character. For example the date 05-12-75 could be
+replaced with ##-##-##.
+Given the file “sampleInfo.txt”, write a program which will replace the following:
+a) Dates in the format MM-DD-YY, MM-DD-YYY EX// 08-23-89, 08-23-1989 becomes ##-##-####
+b) Credit card numbers. Ex// 4624-3452-2311-7344 becomes ####-####-####-####
+c) Currency amounts. EX// $45, $45.45 becomes “$##.##
+d) Security codes are alpha numeric codes which are 20 characters long. They begin with the
+Prefix: “CODE”. EX// CODE4532859341492636, becomes CODE################
+Your program should open the sampleInfo.txt file, replace using a regular expression, all personal info,
+and then save the file as “sampleInfoRedacted.txt”

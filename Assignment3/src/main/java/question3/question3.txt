@@ -1,0 +1,12 @@
+The files ValidateInput.java and Validate.java contain code which use regular
+expressions. The regular expressions could use some improvement. For example the
+validateLastName function allows last names to start with a lower case letter.
+Perform the following improvements to the regular expression functions:
+a) Ensure all first names are at least 3 characters long
+b) Ensure all last names begin with a capital letter
+c) Allow addresses to contain up to 3 words. (right now up to two are allowed)
+d) Allow the state to allow up to 3 words( right now up to two are allowed)
+e) The validateZip function validates 5 digit American zip codes. Modify the regular expression so
+it also will validate Canadian Postal codes. (Ex// validates 54362 and A3C5K2)
+f) Modify the validatePhone regular expression so it requires a 2 digit country code at the start of
+the sequence (Ex 01-433-722-5324)
