@@ -10,15 +10,12 @@ public class wordsReversed {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter a Sentence: ");
         String text = scanner.nextLine();
-
         StringBuilder sb = new StringBuilder();
-
         String[] textArray = text.split(" ");
 
         for (int i = textArray.length - 1; i >= 0; i--) {
             sb.append(textArray[i]).append(" ");
         }
-
         System.out.println(sb);
     }
 }
