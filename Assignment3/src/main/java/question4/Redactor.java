@@ -37,7 +37,7 @@ public class Redactor {
         // Currency
         line = line.replaceAll("\\$(\\d+(\\.\\d{2})?)", "\\$##.##");
         // Security Codes
-        line = line.replaceAll("\\bCODE\\w{16}\\b", "CODE################");
+        line = line.replaceAll("CODE\\w{17}", "CODE################");
 
         return line;
     }
