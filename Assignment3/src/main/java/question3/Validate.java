@@ -1,4 +1,4 @@
-package com.ericstock;
+package com.ericstock.src.main.java.question3;
 // Fig. 14.21: Validate.java
 // Input and validate data from user using the ValidateInput class.
 import java.util.Scanner;

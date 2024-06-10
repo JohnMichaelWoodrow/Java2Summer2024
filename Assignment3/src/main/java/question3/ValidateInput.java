@@ -1,4 +1,4 @@
-package com.ericstock;
+package com.ericstock.src.main.java.question3;
 // Fig. 14.20: ValidateInput.java
 // Validating user information using regular expressions.
 

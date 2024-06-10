@@ -5,31 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f2176d2-435b-4dea-ab2e-8ba4f0cdc3b3" name="Changes" comment="Commit">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Exercise3/Question3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Exercise4/Circle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Exercise4/CircleTester.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Exercise4/InvalidShapeParameterException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Exercise4/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Exercise4/Rectangle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Exercise4/RectangleTester.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Exercise4/Shape.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Exercise4/ShapeGenerator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Exercise5/ExceptionA.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Exercise5/ExceptionB.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Exercise5/ExceptionC.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Exercise5/ExceptionDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Exercise6/ConstructorPass.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Exercise6/ConstructorPassDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Exercise7/RethrowExceptionDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Exercise8/WeightConverter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Exercise8/WeightConverterTester.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment3/Assignment3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment3/src/main/java/question4/Redactor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment3/Validate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment3/ValidateInput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment3/sampleInfo.txt.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +19,20 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;JohnMichaelWoodrow&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="46ffa3bb-5a45-4be9-a574-c73493ec50b8" />
+        <option name="url" value="https://github.com/JohnMichaelWoodrow/Java2Summer2024.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
@@ -48,20 +43,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/rusty/IdeaProjects/Java2Summer2024",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\rusty\IdeaProjects\Java2Summer2024\src\main\java" />
@@ -77,6 +74,14 @@
       <updated>1716315905650</updated>
       <workItem from="1716315906655" duration="1433000" />
       <workItem from="1716332059519" duration="246000" />
+      <workItem from="1717442655103" duration="43000" />
+      <workItem from="1717442704596" duration="14000" />
+      <workItem from="1717442729374" duration="38000" />
+      <workItem from="1717442777047" duration="177000" />
+      <workItem from="1717442961992" duration="61000" />
+      <workItem from="1717443029242" duration="13000" />
+      <workItem from="1718053884119" duration="32000" />
+      <workItem from="1718054144361" duration="18000" />
     </task>
     <task id="LOCAL-00001" summary="Commit">
       <option name="closed" value="true" />
