@@ -1,4 +1,4 @@
-package question1;
+package src.main.java.question1;
 
 import java.util.Random;
 import java.util.ArrayList;

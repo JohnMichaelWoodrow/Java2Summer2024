@@ -1,4 +1,4 @@
-package question2;
+package src.main.java.question2;
 
 import java.util.Scanner;
 import java.util.*;
