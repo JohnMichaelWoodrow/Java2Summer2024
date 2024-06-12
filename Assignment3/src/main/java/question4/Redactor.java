@@ -31,9 +31,9 @@ public class Redactor {
 
     private static String redactLine(String line) {
         // Dates
-        line = line.replaceAll("\\b\\d{2}-\\d{2}-\\d{2}(\\d{2})?\\b", "##-##-####");
+        line = line.replaceAll("\\d{2}-\\d{2}-\\d{2}(\\d{2,4})?", "##-##-####");
         // Credit Card Numbers
-        line = line.replaceAll("\\b\\d{4}-\\d{4}-\\d{4}-\\d{4}\\b", "####-####-####-####");
+        line = line.replaceAll("\\d{4}-\\d{4}-\\d{4}-\\d{4}", "####-####-####-####");
         // Currency
         line = line.replaceAll("\\$(\\d+(\\.\\d{2})?)", "\\$##.##");
         // Security Codes
