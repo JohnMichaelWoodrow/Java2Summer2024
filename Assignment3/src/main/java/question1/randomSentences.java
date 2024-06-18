@@ -31,40 +31,38 @@ public class randomSentences {
         article.add("any");
 
         Random r = new Random();
-        int randomNounItem = r.nextInt(noun.size());
-        String randomNounElement = noun.get(randomNounItem);
+        for (int i = 0; i < 20; i++) {
+            int randomNounItem = r.nextInt(noun.size());
+            String randomNounElement = noun.get(randomNounItem);
 
-        int randomVerbItem = r.nextInt(verb.size());
-        String randomVerbElement = verb.get(randomVerbItem);
+            int randomVerbItem = r.nextInt(verb.size());
+            String randomVerbElement = verb.get(randomVerbItem);
 
-        int randomPItem = r.nextInt(preposition.size());
-        String randomPElement = preposition.get(randomPItem);
+            int randomPItem = r.nextInt(preposition.size());
+            String randomPElement = preposition.get(randomPItem);
 
-        int randomArticleItem = r.nextInt(article.size());
-        String randomArticleElement = article.get(randomArticleItem);
+            int randomArticleItem = r.nextInt(article.size());
+            String randomArticleElement = article.get(randomArticleItem);
 
-        String space = " ";
-        String firstArticle = randomArticleElement.substring(0,1).toUpperCase() + randomArticleElement.substring(1).toLowerCase();
-        String period = ".";
+            String space = " ";
+            String firstArticle = randomArticleElement.substring(0, 1).toUpperCase() + randomArticleElement.substring(1).toLowerCase();
+            String period = ".";
 
-
-        StringBuilder sb = new StringBuilder();
-        sb.append(firstArticle);
-        sb.append(space);
-        sb.append(randomNounElement);
-        sb.append(space);
-        sb.append(randomVerbElement);
-        sb.append(space);
-        sb.append(randomPElement);
-        sb.append(space);
-        sb.append(randomArticleElement);
-        sb.append(space);
-        sb.append(randomNounElement);
-        sb.append(period);
-        String result = sb.toString();
-        System.out.println(result);
-
-        //Example Using concat() method incase that was what was meant to be used
-        //String result = str1.concat(str2).concat(str3).concat(str4);
+            StringBuilder sb = new StringBuilder();
+            sb.append(firstArticle);
+            sb.append(space);
+            sb.append(randomNounElement);
+            sb.append(space);
+            sb.append(randomVerbElement);
+            sb.append(space);
+            sb.append(randomPElement);
+            sb.append(space);
+            sb.append(randomArticleElement);
+            sb.append(space);
+            sb.append(randomNounElement);
+            sb.append(period);
+            String result = sb.toString();
+            System.out.println(result);
+        }
     }
 }

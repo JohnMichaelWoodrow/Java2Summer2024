@@ -5,18 +5,18 @@ package src.main.java.question3;
 public class ValidateInput {
    // validate first name
    public static boolean validateFirstName(String firstName) {
-      return firstName.matches("[A-Z][a-zA-Z]*");
+      return firstName.matches("[A-Z][a-zA-Z' -]{2}.*");
    } 
 
    // validate last name
    public static boolean validateLastName(String lastName) {
-      return lastName.matches("[a-zA-z]+(['-][a-zA-Z]+)*");
+      return lastName.matches("[A-Z]+(['-][a-zA-Z]+)*");
    } 
 
    // validate address
    public static boolean validateAddress(String address) {
       return address.matches(
-         "\\d+\\s+([a-zA-Z]+|[a-zA-Z]+\\s[a-zA-Z]+)");
+         "\\d+\\s+([a-zA-Z]+|[a-zA-Z]+\\s[a-zA-Z]+|[a-zA-Z]+\\s[a-zA-Z]+\\s[a-zA-Z]+)");
    }
 
    // validate city
@@ -26,17 +26,17 @@ public class ValidateInput {
 
    // validate state
    public static boolean validateState(String state) {
-      return state.matches("([a-zA-Z]+|[a-zA-Z]+\\s[a-zA-Z]+)") ;
+      return state.matches("([a-zA-Z]+|[a-zA-Z]+\\s[a-zA-Z]+|[a-zA-Z]+\\s[a-zA-Z]+\\s[a-zA-Z]+)") ;
    }
 
    // validate zip
    public static boolean validateZip(String zip) {
-      return zip.matches("\\d{5}");
+      return zip.matches("\\d{5}|[A-Za-z]\\d[A-Za-z]\\s?\\d[A-Za-z]\\d");
    }
 
    // validate phone
    public static boolean validatePhone(String phone) {
-      return phone.matches("[1-9]\\d{2}-[1-9]\\d{2}-\\d{4}");
+      return phone.matches("\\d{2}-[1-9]\\d{2}-[1-9]\\d{2}-\\d{4}");
    }
 } 
 
