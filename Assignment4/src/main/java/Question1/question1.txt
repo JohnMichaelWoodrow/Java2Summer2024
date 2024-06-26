@@ -1,0 +1,14 @@
+16.4 Explain why inserting additional elements into an ArrayList
+object whose current size is less than its capacity is a relatively fast
+operation and why inserting additional elements into an ArrayList
+object whose current size is at its capacity is a relatively slow operation.
+
+
+ANSWER:
+
+Inserting elements into an ArrayList whose current size is less than its capacity is a relatively fast operation due to not needing to
+resize the internal array. Capacity of the internal array is often larger than the current number of elements.
+
+Inserting elements into an ArrayList whose current size is at its capacity is a relatively slow operation due to the internal array needing to
+be resized to accommodate the new elements. The process involves multiple steps such as creating the array, copying elements and updating references
+which takes up more time/resources.

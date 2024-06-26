@@ -1,0 +1,15 @@
+16.5 Briefly answer the following questions:
+1. What is the primary difference between a Set and a Map?
+2. What happens when you add a primitive type (e.g., double)
+value to a collection?
+3. Can you print all the elements in a collection without using an
+Iterator? If yes, how?
+
+ANSWER:
+1. A set is a collection that cannot contain duplicate elements, does not maintain any particular order.
+A map is a collection that 'maps' keys to values does not allow duplicate keys but does allow duplicate values.
+
+2. Collections can only store objects. Adding a primitive type will cause it to be automatically converted to the
+corresponding wrapper class before being added to the collection.
+
+3. Yes, using a for each loop or the forEach method.
