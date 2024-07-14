@@ -40,7 +40,7 @@ public class RssFeedChecker implements Runnable {
                     RssItem item = items.get(i);
                     System.out.println("Title: " + item.getTitle());
                     System.out.println("Link: " + item.getLink());
-                    System.out.println("Published Date: " + item.getPubDate());
+                    System.out.println("Published: " + item.getPubDate());
                     System.out.println();
                 }
             }

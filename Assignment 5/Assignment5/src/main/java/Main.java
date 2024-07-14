@@ -40,6 +40,6 @@ public class Main {
             }
         }));
 
-        System.out.println("RSS feed checking started. Press Ctrl+C to exit.");
+        System.out.println("Started RSS feed checking. Press Ctrl+C to exit.");
     }
 }
