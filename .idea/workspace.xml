@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f2176d2-435b-4dea-ab2e-8ba4f0cdc3b3" name="Changes" comment="Commit" />
+    <list default="true" id="1f2176d2-435b-4dea-ab2e-8ba4f0cdc3b3" name="Changes" comment="Commit">
+      <change afterPath="$PROJECT_DIR$/Examples/RSSFeedExampleJosh/RSSFeedExample/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Examples/RSSFeedExampleJosh/RSSFeedExample/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Examples/RSSFeedExampleJosh/RSSFeedExample/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Examples/RSSFeedExampleJosh/RSSFeedExample/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Examples/RSSFeedExampleJosh/RSSFeedExample/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Examples/RSSFeedExampleJosh/RSSFeedExample/src/main/java/RSSFeedChecker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Examples/RSSFeedExampleJosh/RSSFeedExample/src/main/java/RSSMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +22,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "JohnMichaelWoodrow"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/JohnMichaelWoodrow/Java2Summer2024.git",
+    "accountId": "46ffa3bb-5a45-4be9-a574-c73493ec50b8"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -47,8 +68,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.15989.150" />
-        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-IU-241.15989.150" />
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
       </set>
     </attachedChunks>
   </component>
@@ -63,6 +84,8 @@
       <workItem from="1716315906655" duration="1433000" />
       <workItem from="1716332059519" duration="246000" />
       <workItem from="1719318981854" duration="187000" />
+      <workItem from="1719937372125" duration="1000" />
+      <workItem from="1720992630682" duration="457000" />
     </task>
     <task id="LOCAL-00001" summary="Commit">
       <option name="closed" value="true" />
@@ -80,7 +103,23 @@
       <option name="project" value="LOCAL" />
       <updated>1719434826763</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Commit">
+      <option name="closed" value="true" />
+      <created>1719435052566</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1719435052566</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Commit">
+      <option name="closed" value="true" />
+      <created>1719435095780</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1719435095780</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
