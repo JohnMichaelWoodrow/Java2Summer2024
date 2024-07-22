@@ -30,7 +30,7 @@ public class RSSFeedChecker implements Runnable {
 
     @Override
     public void run() {
-        while (!Thread.currentThread().isInterrupted()) {
+        do {
             try {
                 checkFeed();
                 Thread.sleep(10000); // 10 seconds
@@ -41,7 +41,7 @@ public class RSSFeedChecker implements Runnable {
                 e.printStackTrace();
                 break;
             }
-        }
+        } while (!Thread.currentThread().isInterrupted());
     }
 
     /**
