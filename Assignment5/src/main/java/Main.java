@@ -46,7 +46,7 @@ public class Main {
             System.out.println("Shutdown complete.");
         }));
 
-        System.out.println("Started RSS feed checking. Press Ctrl+C to exit.");
+        System.out.println("Started RSS feed checking. Press Ctrl+C to exit.\n");
     }
 }
 
