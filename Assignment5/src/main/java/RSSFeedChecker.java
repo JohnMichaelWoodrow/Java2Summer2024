@@ -11,7 +11,7 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
 /**
- * RSSFeedChecker class. Implements the Runnable interface and checks an RSS feed URL
+ * RSSFeedChecker class. Implements Runnable and checks an RSS feed URL
  * for new items every 10 seconds. Keeps track of seen items to avoid repetition.
  */
 public class RSSFeedChecker implements Runnable {

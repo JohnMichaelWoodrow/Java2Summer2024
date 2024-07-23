@@ -1,5 +1,5 @@
 /**
- * RSSItem class represents an item in an RSS feed. Includes the title, link, and publication date of the item.
+ * RSSItem class represents an item in an RSS feed. Includes the title, link, and publish date of the item.
  */
 public class RSSItem {
     private final String title;
@@ -7,11 +7,11 @@ public class RSSItem {
     private final String pubDate;
 
     /**
-     * Constructs an RSSItem with a title, link, and publication date.
+     * Constructs an RSSItem with a title, link, and publish date.
      *
      * @param title   Title of the RSS item.
      * @param link    Link to the RSS item.
-     * @param pubDate Publication date of the RSS item.
+     * @param pubDate Publish date of the RSS item.
      */
     public RSSItem(String title, String link, String pubDate) {
         this.title = title;
