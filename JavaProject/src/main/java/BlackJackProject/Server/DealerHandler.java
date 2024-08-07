@@ -28,7 +28,6 @@ public class DealerHandler implements Runnable {
 
     /**
      * Constructs a DealerHandler for handling client communication.
-     *
      * @param socket The client socket.
      */
     public DealerHandler(Socket socket) {
@@ -63,7 +62,6 @@ public class DealerHandler implements Runnable {
 
     /**
      * Handles client messages and performs actions based on the message type.
-     *
      * @param message JSONObject containing the message from the client.
      */
     private void handleClientMessage(JSONObject message) {
@@ -92,17 +90,17 @@ public class DealerHandler implements Runnable {
 
     /**
      * Sends the current game state to the client.
-     *
      * @param gameResult The result of the game if available.
      */
     private void sendGameState(String gameResult) {
         if (gameResult != null) {
             out.println(gameResult);
         }
-        out.println(game.getFormattedInitialDealerHand());
-        out.println(game.getFormattedPlayerHand());
-        out.println("Player's hand value: " + game.getPlayerHandValue());
-        out.println(game.getFormattedPlayerMoney());
+        boolean isDealerHandRevealed = false;
+        out.println(game.getDealer().getFormattedInitialHand(isDealerHandRevealed));
+        out.println(game.getPlayer().getFormattedHand());
+        out.println("Player's hand value: " + game.getPlayer().calculateHandValue());
+        out.println(game.getPlayer().getFormattedMoney());
         out.println("END OF MESSAGE");
         System.out.println("Sent game state to client");
     }
@@ -113,15 +111,14 @@ public class DealerHandler implements Runnable {
     private void sendGameResult() {
         out.println("\n\n-----GAME RESULT-----\n\n");
         out.println(game.getGameResult());
-        out.println(game.getFormattedPlayerHand());
-        out.println("Player's hand value: " + game.getPlayerHandValue());
-        out.println(game.getFormattedDealerHand());
-        out.println("Dealer's hand value: " + game.getDealerHandValue());
-        out.println(game.getFormattedPlayerMoney());
+        out.println(game.getPlayer().getFormattedHand());
+        out.println("Player's hand value: " + game.getPlayer().calculateHandValue());
+        out.println(game.getDealer().getFormattedHand());
+        out.println("Dealer's hand value: " + game.getDealer().calculateHandValue());
+        out.println(game.getPlayer().getFormattedMoney());
         out.println("END OF MESSAGE");
         game.endRound();
         System.out.println("Sent game result to client");
         System.out.println("Round End");
     }
 }
-

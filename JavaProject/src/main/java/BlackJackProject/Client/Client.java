@@ -24,7 +24,6 @@ public class Client {
 
     /**
      * Main method to start the client and connect to the server.
-     *
      * @param args Server arguments.
      */
     public static void main(String[] args) {
@@ -99,7 +98,6 @@ public class Client {
 
     /**
      * Reads responses from the server and prints them.
-     *
      * @param in BufferedReader to read server responses.
      * @return true if the round has ended, false otherwise.
      * @throws IOException if an I/O error occurs.
@@ -107,7 +105,7 @@ public class Client {
     private static boolean readServerResponses(BufferedReader in) throws IOException {
         String response = "";
         boolean roundEnded = false;
-       do {
+        do {
             System.out.println(response);
             if (response.contains("busts") || response.contains("wins") || response.contains("tie")) {
                 roundEnded = true;
@@ -116,4 +114,5 @@ public class Client {
         return roundEnded;
     }
 }
+
 

@@ -13,29 +13,28 @@ import java.util.List;
  * Constructs a new Dealer with an empty hand
  */
 public class Dealer {
-    private List<PlayingCard> hand;
+    private Hand hand;
 
     /**
      * Constructs a Dealer with an empty hand.
      */
     public Dealer() {
-        hand = new ArrayList<>();
+        hand = new Hand();
     }
 
     /**
      * Adds a card to the dealer's hand.
-     * @param card the card to add
+     * @param card The card to add.
      */
     public void addCard(PlayingCard card) {
-        hand.add(card);
+        hand.addCard(card);
     }
 
     /**
      * Returns the dealer's hand.
-     *
-     * @return the dealer's hand as a list of playing cards
+     * @return The dealer's hand.
      */
-    public List<PlayingCard> getHand() {
+    public Hand getHand() {
         return hand;
     }
 
@@ -43,55 +42,55 @@ public class Dealer {
      * Resets the dealer's hand.
      */
     public void resetHand() {
-        hand.clear();
+        hand.resetHand();
     }
 
     /**
      * Calculates the value of the dealer's hand.
-     *
-     * @return the hand value
+     * @return The hand value.
      */
     public int calculateHandValue() {
-        int value = 0;
-        int aceCount = 0;
-        for (PlayingCard card : hand) {
-            PlayingCard.Value cardValue = card.getValue();
-            if (cardValue == PlayingCard.Value.TWO) value += 2;
-            else if (cardValue == PlayingCard.Value.THREE) value += 3;
-            else if (cardValue == PlayingCard.Value.FOUR) value += 4;
-            else if (cardValue == PlayingCard.Value.FIVE) value += 5;
-            else if (cardValue == PlayingCard.Value.SIX) value += 6;
-            else if (cardValue == PlayingCard.Value.SEVEN) value += 7;
-            else if (cardValue == PlayingCard.Value.EIGHT) value += 8;
-            else if (cardValue == PlayingCard.Value.NINE) value += 9;
-            else if (cardValue == PlayingCard.Value.TEN || cardValue == PlayingCard.Value.JACK || cardValue == PlayingCard.Value.QUEEN || cardValue == PlayingCard.Value.KING) value += 10;
-            else if (cardValue == PlayingCard.Value.ACE) aceCount++;
-        }
-        for (int i = 0; i < aceCount; i++) {
-            if (value + 11 <= 21) {
-                value += 11;
-            } else {
-                value += 1;
-            }
-        }
-        return value;
+        return hand.calculateHandValue();
     }
 
     /**
      * Checks if the dealer is bust.
-     *
-     * @return true if the hand value is over 21, false otherwise
+     * @return true if the hand value is over 21, false otherwise.
      */
     public boolean isBust() {
-        return calculateHandValue() > 21;
+        return hand.isBust();
     }
 
     /**
      * Checks if the dealer should hit.
-     *
-     * @return true if the hand value is less than 17, false otherwise
+     * @return true if the hand value is less than 17, false otherwise.
      */
     public boolean shouldHit() {
-        return calculateHandValue() < 17;
+        return hand.calculateHandValue() < 17;
+    }
+
+    /**
+     * Returns a formatted string of the dealer's hand.
+     * @return a string representing the dealer's hand.
+     */
+    public String getFormattedHand() {
+        return "Dealer Hand: " + hand.formatHand();
+    }
+
+    /**
+     * Returns a formatted string of the dealer's initial hand with one card hidden.
+     * @param isHandRevealed Indicates if the hand should be fully revealed.
+     * @return A formatted string of the dealer's initial hand.
+     */
+    public String getFormattedInitialHand(boolean isHandRevealed) {
+        List<String> initialHand = new ArrayList<>();
+        for (int i = 0; i < hand.getCards().size(); i++) {
+            if (i == 1 && !isHandRevealed) {
+                initialHand.add("HIDDEN");
+            } else {
+                initialHand.add(hand.getCards().get(i).toString());
+            }
+        }
+        return "Dealer Hand: " + String.join(", ", initialHand);
     }
 }

@@ -3,7 +3,7 @@ package BlackJackProject;
 /**
  * BlackJack Project
  * Represents a playing card with a suit and value, used to create playing cards that make up a deck.
- * Author: john-michael woodrow
+ * @author john-michael woodrow
  */
 
 /**
@@ -20,7 +20,6 @@ public class PlayingCard {
 
         /**
          * Constructs a Suit instance with a given symbol.
-         *
          * @param symbol Symbol representing the suit.
          */
         Suit(String symbol) {
@@ -29,7 +28,6 @@ public class PlayingCard {
 
         /**
          * Returns the symbol of the suit as a string.
-         *
          * @return String representing the symbol.
          */
         @Override
@@ -51,7 +49,6 @@ public class PlayingCard {
 
         /**
          * Constructs a Value instance with a given symbol.
-         *
          * @param symbol Symbol representing the value.
          */
         Value(String symbol) {
@@ -60,7 +57,6 @@ public class PlayingCard {
 
         /**
          * Returns the symbol of the value as a string.
-         *
          * @return String representing the symbol of the value.
          */
         @Override
@@ -74,7 +70,6 @@ public class PlayingCard {
 
     /**
      * Constructs a PlayingCard with the specified suit and value.
-     *
      * @param suit Suit of the card.
      * @param value Value of the card.
      */
@@ -85,7 +80,6 @@ public class PlayingCard {
 
     /**
      * Returns the suit of the card.
-     *
      * @return Suit.
      */
     public Suit getSuit() {
@@ -94,7 +88,6 @@ public class PlayingCard {
 
     /**
      * Returns the value of the card.
-     *
      * @return Value.
      */
     public Value getValue() {
@@ -103,7 +96,6 @@ public class PlayingCard {
 
     /**
      * Returns a string representation of the playing card.
-     *
      * @return String representation of the playing card.
      */
     @Override

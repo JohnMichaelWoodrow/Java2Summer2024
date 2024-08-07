@@ -1,10 +1,5 @@
 package BlackJackProject;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.stream.Collectors;
-
-
 /**
  * BlackJack Project
  * BlackJackGame class to manage the game logic, player and dealer interactions.
@@ -34,7 +29,6 @@ public class BlackJackGame {
 
     /**
      * Returns the player in the game.
-     *
      * @return the player object
      */
     public Player getPlayer() {
@@ -42,8 +36,15 @@ public class BlackJackGame {
     }
 
     /**
+     * Returns the dealer in the game.
+     * @return the dealer object
+     */
+    public Dealer getDealer() {
+        return dealer;
+    }
+
+    /**
      * Places a bet and starts a new round.
-     *
      * @param bet The amount to bet
      */
     public void placeBet(int bet) {
@@ -73,13 +74,6 @@ public class BlackJackGame {
     }
 
     /**
-     * Adds a card to the dealer's hand.
-     */
-    public void dealerHit() {
-        dealer.addCard(deck.drawCard());
-    }
-
-    /**
      * Ends the player's turn and starts the dealer's turn.
      */
     public void playerStay() {
@@ -100,44 +94,9 @@ public class BlackJackGame {
     }
 
     /**
-     * Returns the player's hand.
+     * Returns the game result as a string.
      *
-     * @return the player's hand as a list of playing cards
-     */
-    public List<PlayingCard> getPlayerHand() {
-        return player.getHand();
-    }
-
-    /**
-     * Returns the dealer's hand.
-     *
-     * @return the dealer's hand as a list of playing cards
-     */
-    public List<PlayingCard> getDealerHand() {
-        return dealer.getHand();
-    }
-
-    /**
-     * Returns the dealer's initial hand with one card hidden.
-     *
-     * @return the dealer's initial hand as a list of playing cards
-     */
-    public List<PlayingCard> getDealerInitialHand() {
-        List<PlayingCard> initialHand = new ArrayList<>();
-        for (int i = 0; i < dealer.getHand().size(); i++) {
-            if (i == 1 && !isDealerHandRevealed) {
-                initialHand.add(new PlayingCard(dealer.getHand().get(i).getSuit(), PlayingCard.Value.HIDDEN));
-            } else {
-                initialHand.add(dealer.getHand().get(i));
-            }
-        }
-        return initialHand;
-    }
-
-    /**
-     * Returns the result of the game based on the hand values.
-     *
-     * @return a string describing the game result
+     * @return a string representing the game result.
      */
     public String getGameResult() {
         int playerValue = player.calculateHandValue();
@@ -157,78 +116,5 @@ public class BlackJackGame {
         } else {
             return "Dealer wins.";
         }
-    }
-
-    /**
-     * Returns the value of the player's hand.
-     *
-     * @return the player's hand value
-     */
-    public int getPlayerHandValue() {
-        return player.calculateHandValue();
-    }
-
-    /**
-     * Returns the value of the dealer's hand.
-     *
-     * @return the dealer's hand value
-     */
-    public int getDealerHandValue() {
-        return dealer.calculateHandValue();
-    }
-
-    /**
-     * Returns a formatted string of the player's hand.
-     *
-     * @return a string representing the player's hand
-     */
-    public String getFormattedPlayerHand() {
-        return "Player Hand: " + formatHand(player.getHand());
-    }
-
-    /**
-     * Returns a formatted string of the dealer's hand.
-     *
-     * @return a string representing the dealer's hand
-     */
-    public String getFormattedDealerHand() {
-        return "Dealer Hand: " + formatHand(dealer.getHand());
-    }
-
-    /**
-     * Returns a formatted string of the player's money.
-     *
-     * @return a string representing the player's money
-     */
-    public String getFormattedPlayerMoney() {
-        return "Player's money: $" + player.getMoney();
-    }
-
-    /**
-     * Formats a hand of playing cards into a string.
-     *
-     * @param hand the list of playing cards to format
-     *
-     * @return a formatted string of the hand
-     */
-    private String formatHand(List<PlayingCard> hand) {
-        return hand.stream().map(PlayingCard::toString).collect(Collectors.joining(", "));
-    }
-
-    /**
-     * Returns a formatted string of the dealer's initial hand with one card hidden.
-     *
-     * @return a string representing the dealer's initial hand
-     */
-    public String getFormattedInitialDealerHand() {
-        List<String> initialHand = new ArrayList<>();
-        for (int i = 0; i < dealer.getHand().size(); i++) {
-            if (i == 1 && !isDealerHandRevealed) {
-                initialHand.add("HIDDEN");
-            } else {
-                initialHand.add(dealer.getHand().get(i).toString());
-            }
-        }
-        return "Dealer Hand: " + String.join(", ", initialHand);
     }
 }

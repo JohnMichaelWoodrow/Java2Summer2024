@@ -4,7 +4,7 @@ package BlackJackProject;
  * BlackJack Project
  * Message class represents a message with a type and associated data.
  * Provides methods to retrieve the type and data of the message.
- * Author: john-michael woodrow
+ * @author john-michael woodrow
  */
 
 /**
@@ -27,7 +27,6 @@ public class Message {
 
     /**
      * Returns the type of the message.
-     *
      * @return The type of the message.
      */
     public String getType() {
@@ -36,7 +35,6 @@ public class Message {
 
     /**
      * Returns the data associated with the message.
-     *
      * @return The data of the message.
      */
     public Object getData() {

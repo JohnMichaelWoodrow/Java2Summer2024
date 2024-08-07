@@ -24,7 +24,6 @@ public class ClientSecond {
 
     /**
      * Main method to start the second client and connect to the server.
-     *
      * @param args Server arguments.
      */
     public static void main(String[] args) {
@@ -99,7 +98,6 @@ public class ClientSecond {
 
     /**
      * Reads responses from the server and prints them.
-     *
      * @param in BufferedReader to read server responses.
      * @return true if the round has ended, false otherwise.
      * @throws IOException if an I/O error occurs.

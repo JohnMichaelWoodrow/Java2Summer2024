@@ -19,7 +19,6 @@ public class Server {
 
     /**
      * Main method to start the server and accept client connections.
-     *
      * @param args Port arguments.
      */
     public static void main(String[] args) {
